@@ -13,7 +13,7 @@ const Helvetica = localFont({
 
 export default function Sidebar() {
   return (
-    <div className="flex flex-col h-screen w-[300px] text-gray-600 bg-transparent border-r-2 border-[#242a36]">
+    <div className="hidden md:flex flex-col h-screen w-[300px] text-gray-600 bg-transparent border-r-2 border-[#242a36]">
 
         {/* <div className="flex flex-inline mx-2 my-6 justfy-center items-center">
           
