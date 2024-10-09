@@ -1,7 +1,5 @@
 import * as React from 'react'
 
-import Card from '@/components/Dashboard/Card';
-
 import localFont from "next/font/local";
 import Link from 'next/link';
 import logo from '@/public/logo.png';
@@ -23,9 +21,6 @@ export default function Main({name, email}: Props) {
     <div className="w-screen h-screen">
         <h1 className={`${Helvetica.className} text-white font-semibold text-lg mt-5 ml-8`}>Dashboard</h1>
         <span className={`${Helvetica.className} mt-[1px] text-gray-600 font-normal text-[14px] ml-8`}>This week's Overview For {name} </span>
-        <Card className='my-6 mx-8'>
-          <h1></h1>
-        </Card>
     </div>
   )
 }
