@@ -19,8 +19,8 @@ interface Props {
 export default function Main({name, email}: Props) {
   return (
     <div className="w-screen h-screen">
-        <h1 className={`${Helvetica.className} text-white font-semibold text-lg mt-5 ml-8`}>Dashboard</h1>
-        <span className={`${Helvetica.className} mt-[1px] text-gray-600 font-normal text-[14px] ml-8`}>This week's Overview For {name} </span>
+        <h1 className={`${Helvetica.className} text-white font-bold text-5xl mt-5 ml-6`}>Dashboard</h1>
+        <span className={`${Helvetica.className} mt-[1px] text-gray-600 font-normal text-[17px] ml-6`}>This week's Overview For {name} </span>
     </div>
   )
 }

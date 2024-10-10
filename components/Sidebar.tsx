@@ -26,11 +26,10 @@ export default function Sidebar() {
         </div> */}
 
         <button className="rounded-lg mx-[2px] my-2 mt-5 text-start flex flex-inline items-center">
-        <Image src={logo} alt="logo" height={45} width={35} className="ml-3 mr-[8px] my-[2px] rounded-md" />
-        <span className={`${Helvetica.className} font-semibold text-md text-white mt-2`}>Comet</span>
+        <Image src={logo} alt="logo" height={45} width={45} className="ml-3 mr-[8px] my-[2px] rounded-md" />
         </button>
 
-        <div className="mt-2">
+        <div className="">
           <span className={`${Helvetica.className} font-bold text-[13px] text-gray-600 mx-4`}>Analytics</span>
 
             <Link href="/dashboard" className='mx-3 flex flex-inline items-center rounded-lg hover:bg-[#303233] hover:text-black'>
