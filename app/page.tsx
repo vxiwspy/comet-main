@@ -14,7 +14,6 @@ export default function Dashboard() {
   return (
     <div className="flex h-screen w-screen bg-[#090909] text-white">
       <Bottom />
-      <Sidebar />
       <Main name="Bharnav" email="user@gmail.com" />
     </div>
   )
