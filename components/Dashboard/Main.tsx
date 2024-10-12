@@ -39,9 +39,10 @@ export default function Main({ name, email }: Props) {
       </span>
 
       {/* Mobile View */}
-      <Link href='/add' className='md:hidden flex flex-inline justify-between border-2 border-gray-300 mx-6 my-5 rounded-lg'>
+
+      <Link href='/add' className='md:hidden flex flex-inline justify-between border-2 border-gray-300 mx-6 mt-12 mb-3 rounded-lg'>
         <CirclePlus color="#d0d5db"  className='mx-3 my-3' size='32px' />
-        <span className='text-gray-400 mx-3 my-3 text-md font-normal'> Add Food</span>
+        <span className='text-gray-400 mx-3 my-auto text-md font-normal items-center'> Add Food</span>
       </Link>
 
 
@@ -82,7 +83,7 @@ export default function Main({ name, email }: Props) {
         </span>
       </div>
 
-      <div className="flex flex-inline mx-5 justify-between md:hidden">
+      <div className="flex flex-inline mx-8 justify-between md:hidden">
         <div className="flex flex-col my-3 justify-center items-center">
           <div
             className="radial-progress text-orange-400"
