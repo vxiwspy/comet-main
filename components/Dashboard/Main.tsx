@@ -36,7 +36,7 @@ export default function Main({name, email}: Props) {
                     <span className='text-md font-semibold text-gray-600'> Remaining </span>
               </div>
 
-              <div className="radial-progress my-4 mx-4" style={{ "--value": ((calorieToday / calorieGoal) * 100), "--size": "7rem", "--thickness": "10px" }} role="progressbar">
+              <div className="radial-progress my-4 mx-4" style={{ "--value": ((calorieToday / calorieGoal) * 100), "--size": "7rem", "--thickness": "10px" }  as React.CSSProperties } role="progressbar">
                 <div className='flex flex-col mx-3 my-3 justify-center items-center'>
                 <Apple />
               </div>
