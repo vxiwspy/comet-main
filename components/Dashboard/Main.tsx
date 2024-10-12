@@ -25,7 +25,7 @@ export default function Main({name, email}: Props) {
 
   return (
     <div className="w-full h-full">
-        <h1 className={`${Helvetica.className} text-white font-bold text-5xl mt-5 ml-6`}>Dashboard</h1>
+        <h1 className={`${Helvetica.className} text-white font-bold text-5xl mt-7 ml-6`}>Dashboard</h1>
         <span className={`${Helvetica.className} mt-[1px] text-gray-600 font-normal text-[17px] ml-6`}>This week's Overview For {name} </span>
 
           {/* Mobile View */}
