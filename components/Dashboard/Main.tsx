@@ -94,7 +94,7 @@ export default function Main({ name, email }: Props) {
             style={
               {
                 "--value": (calorieToday / calorieGoal) * 100,
-                "--size": "3.75rem",
+                "--size": "4rem",
                 "--thickness": "6px",
               } as React.CSSProperties
             }
@@ -114,7 +114,7 @@ export default function Main({ name, email }: Props) {
               style={
                 {
                   "--value": 43,
-                  "--size": "3.75rem",
+                  "--size": "4rem",
                   "--thickness": "6px",
                 } as React.CSSProperties
               }
@@ -137,7 +137,7 @@ export default function Main({ name, email }: Props) {
               style={
                 {
                   "--value": 23,
-                  "--size": "3.75rem",
+                  "--size": "4rem",
                   "--thickness": "6px",
                 } as React.CSSProperties
               }
