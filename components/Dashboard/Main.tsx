@@ -45,8 +45,13 @@ export default function Main({ name, email }: Props) {
         <span className='text-gray-400 mx-3 my-auto text-md font-normal items-center'> Add Food</span>
       </Link>
 
-
       <div className="flex flex-col my-5 mx-6 rounded-lg bg-transparent md:hidden border border-gray-600">
+        <span className="text-gray-600 mx-2 my-2 text-sm font-semibold">
+          Macro Breakdown
+        </span>
+      </div>
+
+      <div className="flex flex-col my-5 mx-6 rounded-lg bg-[#151924] md:hidden">
         <div className="flex flex-inline justify-between items-center">
           <div className="flex flex-col mx-3 my-3">
             <span className="text-4xl font-bold">
@@ -77,14 +82,8 @@ export default function Main({ name, email }: Props) {
         </div>
       </div>
 
-      <div className="flex flex-col my-5 mx-6 rounded-lg bg-transparent md:hidden border border-gray-600">
-        <span className="text-gray-600 mx-2 my-2 text-sm font-semibold">
-          Macro Breakdown
-        </span>
-      </div>
-
-      <div className="flex flex-inline mx-8 justify-between md:hidden">
-        <div className="flex flex-col my-3 justify-center items-center">
+      <div className="flex flex-inline mx-6 justify-between md:hidden rounded-lg bg-[#151924]">
+        <div className="flex flex-col my-3 mx-2 justify-center items-center">
           <div
             className="radial-progress text-orange-400"
             style={
@@ -103,8 +102,8 @@ export default function Main({ name, email }: Props) {
           </div>
         </div>
 
-        <div className="flex flex-inline my-3 justify-center items-center">
-          <div className="flex flex-col  justify-center items-center">
+        <div className="flex flex-inline my-3 mx-3 justify-center items-center">
+          <div className="flex flex-col my-3 mx-2 justify-center items-center">
             <div
               className="radial-progress text-red-500"
               style={
@@ -126,8 +125,8 @@ export default function Main({ name, email }: Props) {
           </div>
         </div>
 
-        <div className="flex flex-inline my-3 justify-center items-center">
-          <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-inline my-3 mx-3 justify-center items-center">
+          <div className="flex flex-col my-3 mx-2 justify-center items-center">
             <div
               className="radial-progress text-blue-500"
               style={
