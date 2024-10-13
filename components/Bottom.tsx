@@ -10,7 +10,7 @@ export default function Bottom() {
 
   return (
     <div
-    className="md:hidden flex flex-inline justify-between fixed z-50  bottom-0 w-screen bg-black rounded-t-xl">
+    className="md:hidden flex flex-inline justify-between fixed z-50  bottom-0 w-screen bg-slate-950 rounded-t-xl">
 
       <Link href="/" className="mx-auto my-5 flex-col flex justify-center items-center rounded-lg" onClick={() => setCurrent("Home")}>
         <House color={current === "Home" ? "#9f87ff" : "#4b5563"} className='flex' size={29} strokeWidth={2.5} />
