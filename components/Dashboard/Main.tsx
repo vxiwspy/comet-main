@@ -1,4 +1,7 @@
-import * as React from "react";
+"use client";
+
+import {useState, useEffect} from "react";
+import { motion } from "framer-motion"
 
 import { Apple, CirclePlus } from "lucide-react";
 import localFont from "next/font/local";
@@ -13,9 +16,10 @@ interface Props {
   email: string;
 }
 
-// {children}: {children: React.ReactElement}
 
 export default function Main({ name, email }: Props) {
+
+  
   // dummy data
   const calorieGoal = 3212;
   const calorieToday = 2721;
@@ -24,34 +28,23 @@ export default function Main({ name, email }: Props) {
   const fats = 13;
   const protien = 9;
 
+
   return (
-    <div className="w-screen h-screen">
-      <h1
-        className={`${Helvetica.className} text-white font-bold text-5xl mt-7 ml-6`}
+    <div className="w-screen h-screen mt-6 ">
+      <motion.h1 initial={{x: 300,opacity: 0}} animate={{x: 0,opacity: 1}} transition={{ ease: "backInOut", duration: 1, x: { duration: 1 }}}
+        className={`${Helvetica.className} text-white font-bold text-2xl ml-6`}
       >
-        Dashboard
-      </h1>
+        Today
+      </motion.h1>
 
-      {/* Mobile View */}
-
-      {/* <Link
-        href="/add"
-        className="md:hidden flex flex-inline justify-between border-2 border-gray-300 mx-6 mt-12 mb-3 rounded-lg"
-      >
-        <CirclePlus color="#d0d5db" className="mx-2 my-2" size="26px" />
-        <span className="text-gray-400 mx-3 my-auto text-md font-normal items-center">
-          {" "}
-          Add Food
-        </span>
-      </Link> */}
-
-      <div className="flex flex-col mt-8 mx-6 rounded-lg bg-transparent md:hidden">
-        <span className="text-gray-600 text-sm font-semibold">
+      <div className="flex flex-col mt-3 mx-6 rounded-lg bg-transparent md:hidden">
+        <motion.span initial={{x: 300,opacity: 0}} animate={{x: 0,opacity: 1}} transition={{ ease: "backInOut", duration: 1, x: { duration: 1 }}} className="text-gray-600 text-sm font-semibold">
           Macro Breakdown
-        </span>
+        </motion.span>
       </div>
 
-      <div className="flex flex-col mb-5 mt-3 mx-6 rounded-lg bg-slate-950 md:hidden">
+      <motion.div initial={{x: 300,opacity: 0}} animate={{x: 0,opacity: 1}} transition={{ ease: "backInOut", duration: 1, x: { duration: 1 }
+}} className="flex flex-col mb-5 mt-3 mx-6 rounded-lg bg-slate-950 md:hidden ">
         <div className="flex flex-inline justify-between items-center">
           <div className="flex flex-col mx-3 my-3">
             <span className="text-4xl font-bold">
@@ -80,9 +73,9 @@ export default function Main({ name, email }: Props) {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex justify-between mx-6 md:hidden rounded-lg bg-slate-950 overflow-auto">
+      <motion.div initial={{x: 300,opacity: 0}} animate={{x: 0,opacity: 1}} transition={{ ease: "backInOut", duration: 1, x: { duration: 1 }}} className="flex justify-between mx-6 md:hidden rounded-lg bg-slate-950 overflow-auto">
         <div className="flex flex-col my-3 mx-3 justify-center items-center">
           <span className="text-white text-md my-2 font-semibold">Carbs</span>
           <div
@@ -156,7 +149,7 @@ export default function Main({ name, email }: Props) {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

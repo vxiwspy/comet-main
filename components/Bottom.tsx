@@ -1,7 +1,8 @@
 "use client";
 
+import {motion} from "framer-motion"
 import React, {useState} from 'react'
-import {House, User, Apple, ChartNoAxesColumnIncreasing, CirclePlus} from 'lucide-react'
+import {House, User, Apple, ChartNoAxesColumnIncreasing, Search} from 'lucide-react'
 import Link from "next/link";
 
 export default function Bottom() {
@@ -9,7 +10,7 @@ export default function Bottom() {
   const [current, setCurrent] = useState("Home");
 
   return (
-    <div
+    <motion.div initial={{y: 300,opacity: 0}} animate={{y: 0,opacity: 1}} transition={{ ease: "easeIn", duration: 1.5, x: { duration: 1.5 }}}
     className="md:hidden flex flex-inline justify-between fixed z-50  bottom-0 w-screen bg-slate-950 rounded-t-xl">
 
       <Link href="/" className="mx-auto my-5 flex-col flex justify-center items-center rounded-lg" onClick={() => setCurrent("Home")}>
@@ -19,6 +20,11 @@ export default function Bottom() {
       <Link href="/" className="mx-auto my-5 flex-col flex justify-center items-center" onClick={() => setCurrent("History")} >
         <Apple color={current === "History" ? "#9f87ff" : "#4b5563"} className='flex' size={29} strokeWidth={2.5} />
         <span className={`${current === "History" ? "text-[#9f87ff]" : "text-gray-600"} text-sm font-normal mx-2`}>History</span>
+      </Link>
+
+      <Link href="/" className="mx-auto my-5 flex-col flex justify-center items-center rounded-lg" onClick={() => setCurrent("Search")}>
+        <Search color={current === "Search" ? "#9f87ff" : "#4b5563"} className='flex' size={29} strokeWidth={2.5} />
+        <span className={`${current === "Search" ? "text-[#9f87ff]" : "text-gray-600"} text-sm font-normal mx-2`}>Search</span>
       </Link>
 
       <Link href="/" className="mx-auto my-5 flex-col flex justify-center items-center " onClick={() => setCurrent("Analytics")}>
@@ -31,6 +37,6 @@ export default function Bottom() {
         <span className={`${current === "Profile" ? "text-[#9f87ff]" : "text-gray-600"} text-sm font-normal mx-2`}>Profile</span>
       </Link>
 
-    </div>
+    </motion.div>
   )
 }

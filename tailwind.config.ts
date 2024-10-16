@@ -60,6 +60,6 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui'), 'tailwindcss-animated'],
 };
 export default config;
